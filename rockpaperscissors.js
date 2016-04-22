@@ -38,25 +38,25 @@ function getComputerMove(move) {
 function getWinner(playerMove, computerMove) {
     var winner;
     if ((computerMove === 'rock') && (playerMove === 'rock')) {
-        winner = "It's a TIE!";
+        return "It's a TIE!";
     } else if ((computerMove === 'paper') && (playerMove === 'paper')) {
-        winner = "It's a TIE!";
+        return "It's a TIE!";
     } else if ((computerMove === 'scissors') && (playerMove === 'scissors')) {
-        winner = "It's a TIE!";
+        return "It's a TIE!";
     } else if ((computerMove === 'rock') && (playerMove === 'paper')) {
-        winner = "The computer. Maybe next time!";
+       return "The computer. Maybe next time!";
     } else if ((computerMove === 'rock') && (playerMove === 'scissors')) {
-        winner = "The computer. Maybe next time!";
+        return "The computer. Maybe next time!";
     } else if ((computerMove === 'paper') && (playerMove === 'rock')) {
-        winner = "The player. You did it!";
+        return "The player. You did it!";
     } else if ((computerMove === 'paper') && (playerMove === 'scissors')) {
-        winner = "The player. You did it!";
+        return "The player. You did it!";
     } else if ((computerMove === 'scissors') && (playerMove === 'paper')) {
-        winner = "The computer. Maybe next time!";
+        return "The computer. Maybe next time!";
     } else if ((computerMove === 'scissors') && (playerMove === 'rock')) {
-        winner = "The player. You did it!";
+        return "The player. You did it!";
     } else {
-        winner = "Not a thing!"
+        return "Not a thing!";
     }
     console.log("Drum roll... The winner is: " + winner);
 }
@@ -69,4 +69,3 @@ function playToFive() {
     /* YOUR CODE HERE */
     return [playerWins, computerWins];
 }
-
